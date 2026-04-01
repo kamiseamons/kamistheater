@@ -1189,10 +1189,14 @@
 </footer>
 
 <script>
-  // Close mobile nav on link click
+  // Close mobile nav on link click + clean URL hash
   document.querySelectorAll('.nav-links a').forEach(a => {
     a.addEventListener('click', () => {
       document.querySelector('.nav-links').classList.remove('open');
+      // Remove hash from URL after scrolling so refresh goes to top
+      setTimeout(() => {
+        history.replaceState(null, null, window.location.pathname);
+      }, 100);
     });
   });
 
