@@ -335,14 +335,16 @@
   .dates-section .section-subtitle { color: #c8b0e8; }
 
   .dates-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.8rem;
     max-width: 950px;
     margin: 0 auto 2rem;
   }
 
   .date-card {
+    flex: 0 1 170px;
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,215,0,0.15);
     border-radius: var(--radius);
@@ -877,15 +879,10 @@
     .show-songs { grid-template-columns: repeat(2, auto); }
   }
 
-  @media (max-width: 900px) {
-    .dates-grid { grid-template-columns: repeat(3, 1fr); }
-  }
-
   @media (max-width: 700px) {
     .hero { min-height: 400px; }
     .hero-content { padding: 2rem 1rem 2.5rem; }
     section { padding: 3.5rem 0; }
-    .dates-grid { grid-template-columns: repeat(3, 1fr); }
     .show-box { padding: 1.5rem; }
     .price-box { padding: 1.5rem; }
   }
