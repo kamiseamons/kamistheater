@@ -7,7 +7,7 @@
 <meta name="description" content="A week-long theater camp for kids ages 8-13 in Highland/Alpine, Utah. Singing, dancing, acting, and a live performance! Summer 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --purple-dark: #1a0a2e;
@@ -62,7 +62,7 @@
   }
 
   .nav-brand {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--gold-glow);
@@ -163,15 +163,13 @@
     z-index: 1;
     padding: 2.5rem 2rem 3rem;
     max-width: 700px;
-    background: rgba(0, 0, 0, 0.45);
-    border-radius: 20px;
-    margin: 1.5rem;
+
   }
 
   .hero-logo {
-    max-width: 320px;
-    width: 70%;
-    margin-bottom: 0.8rem;
+    max-width: 420px;
+    width: 85%;
+    margin-bottom: 1rem;
   }
 
   .hero-subtitle {
@@ -230,7 +228,7 @@
   }
 
   .section-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-size: 2.2rem;
     font-weight: 700;
     color: var(--text-dark);
@@ -295,7 +293,7 @@
   }
 
   .instructor-card h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--text-dark);
@@ -359,7 +357,7 @@
   }
 
   .date-card .dates {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.3rem;
     font-weight: 700;
     color: #fff;
@@ -441,7 +439,7 @@
   }
 
   .learn-card h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-dark);
@@ -469,14 +467,14 @@
   }
 
   .show-box h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.5rem;
     color: var(--text-dark);
     margin-bottom: 0.2rem;
   }
 
   .show-box .show-name {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-style: italic;
     font-size: 1.4rem;
     color: var(--gold-muted);
@@ -537,7 +535,7 @@
   }
 
   .price-amount {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-size: 4rem;
     font-weight: 700;
     color: var(--gold-muted);
@@ -600,7 +598,7 @@
   }
 
   .scholarship-box h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--text-dark);
@@ -638,7 +636,7 @@
   }
 
   .scholarship-form h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--text-dark);
@@ -772,7 +770,7 @@
   }
 
   .footer h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.8rem;
     color: var(--gold-glow);
     margin-bottom: 1rem;
@@ -1125,9 +1123,10 @@
       <p class="form-note">All applications are confidential. We'll do our best to help every kid who wants to be on stage. Please also complete the <a href="https://forms.gle/SuDH2Sbjdi7FvH9w8" target="_blank" rel="noopener" style="color:var(--purple-accent);font-weight:600;">camp registration form</a> so we have all of your child's information.</p>
 
       <form name="scholarship" method="POST" action="https://formsubmit.co/onceuponastage.26@gmail.com">
-        <input type="hidden" name="_subject" value="New Scholarship Application - Once Upon a Stage">
+        <input type="hidden" name="_subject" value="Scholarship Application - Once Upon a Stage">
         <input type="hidden" name="_next" value="https://kamistheater.com/success.html">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
         <label for="s-parent">Parent/Guardian Name</label>
         <input type="text" id="s-parent" name="parent-name" placeholder="Your name" required>
@@ -1210,9 +1209,10 @@
     <h2>Get in Touch</h2>
 
     <form class="contact-form" name="contact" method="POST" action="https://formsubmit.co/onceuponastage.26@gmail.com">
-      <input type="hidden" name="_subject" value="New Message from Once Upon a Stage Website">
+      <input type="hidden" name="_subject" value="New Message - Once Upon a Stage Website">
       <input type="hidden" name="_next" value="https://kamistheater.com/success.html">
       <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
       <label for="name">Your Name</label>
       <input type="text" id="name" name="name" placeholder="Jane Smith" required>
       <label for="email">Your Email</label>
