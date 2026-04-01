@@ -335,16 +335,14 @@
   .dates-section .section-subtitle { color: #c8b0e8; }
 
   .dates-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 0.8rem;
     max-width: 950px;
     margin: 0 auto 2rem;
   }
 
   .date-card {
-    flex: 0 1 170px;
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,215,0,0.15);
     border-radius: var(--radius);
@@ -888,7 +886,7 @@
   }
 
   @media (max-width: 520px) {
-    .date-card { flex: 0 1 calc(50% - 0.5rem); }
+    .dates-grid { grid-template-columns: 1fr 1fr; max-width: 340px; margin-left: auto; margin-right: auto; }
     .learn-grid { grid-template-columns: 1fr; max-width: 350px; margin-left: auto; margin-right: auto; }
     .show-songs { grid-template-columns: 1fr; }
     .show-songs-last-row { flex-direction: column; align-items: center; }
@@ -1116,7 +1114,7 @@
       <p class="form-note">All applications are confidential. We'll do our best to help every kid who wants to be on stage. Please also complete the <a href="https://forms.gle/SuDH2Sbjdi7FvH9w8" target="_blank" rel="noopener" style="color:var(--purple-accent);font-weight:600;">camp registration form</a> so we have all of your child's information.</p>
 
       <p style="font-size:0.95rem;color:var(--text-body);line-height:1.6;margin-bottom:0.5rem;">To apply, please email us with:</p>
-      <ul style="text-align:left;max-width:320px;margin:0 auto 1rem;font-size:0.92rem;color:var(--text-body);line-height:1.8;list-style:none;padding:0;">
+      <ul style="text-align:left;display:inline-block;margin:0 auto 1rem;font-size:0.92rem;color:var(--text-body);line-height:1.8;list-style:none;padding:0;">
         <li style="padding-left:1.2rem;position:relative;"><span style="position:absolute;left:0;color:var(--gold-muted);">&#10148;</span> Your name</li>
         <li style="padding-left:1.2rem;position:relative;"><span style="position:absolute;left:0;color:var(--gold-muted);">&#10148;</span> Your child's name and age</li>
         <li style="padding-left:1.2rem;position:relative;"><span style="position:absolute;left:0;color:var(--gold-muted);">&#10148;</span> Which session you're interested in</li>
