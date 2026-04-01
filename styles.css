@@ -137,7 +137,7 @@
   .hero-bg {
     position: absolute;
     inset: 0;
-    background: url('hero-lights.jpg') center/cover no-repeat;
+    background: url('hero-lights.jpg') center top/cover no-repeat;
   }
 
   .hero-bg::after {
