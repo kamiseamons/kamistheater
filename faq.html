@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ - Once Upon a Stage</title>
+<meta name="description" content="Frequently asked questions about Once Upon a Stage theater camp for kids in Highland/Alpine, Utah.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Once Upon a Stage</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="dates.html">Dates &amp; Info</a></li>
+      <li><a href="show.html">The Show</a></li>
+      <li><a href="register.html">Pricing</a></li>
+      <li><a href="scholarships.html">Scholarships</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="https://forms.gle/SuDH2Sbjdi7FvH9w8" target="_blank" rel="noopener" class="nav-cta">Register!</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <hr class="section-rule">
+    <h2 class="section-title">FAQ</h2>
+    <p class="section-subtitle">Everything you need to know</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Who's running this camp?</div>
+        <div class="faq-a">Once Upon a Stage is run by Kami Seamons. Kami has performed at Lincoln Center NYC, understudied at Hale Centre Theatre, and has years of choir, improv, and stage experience. Your kids are learning from someone who lives and breathes theater.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Where is the camp held?</div>
+        <div class="faq-a">The camp is held at a stake center in the Highland/Alpine area of Utah. The specific address will be provided upon registration.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does my child need theater experience?</div>
+        <div class="faq-a">Not at all! This camp is designed for all skill levels. Whether your child has never been on stage or has years of experience, they'll have a great time and learn something new.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What should my child bring?</div>
+        <div class="faq-a">A packed lunch, a water bottle, and comfortable clothes they can move in. Closed-toe shoes are recommended for dancing.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What ages is the camp for?</div>
+        <div class="faq-a">Kids ages 8 to 13. All skill levels within that age range are welcome!</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can my child attend more than one session?</div>
+        <div class="faq-a">Absolutely! Each session runs the same program, but your child is welcome to come back for another week if they loved it.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is the Saturday show?</div>
+        <div class="faq-a">On Saturday, campers perform a live 20-minute Disney-inspired revue called "Magic Through the Ages" for family and friends at 3:00 PM (call time 2:00 PM). It's the highlight of the week. Every child has a moment to shine on stage!</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I pay?</div>
+        <div class="faq-a">A $30 non-refundable deposit secures your spot via Venmo. The remaining balance ($120) is due before the first day of camp. Send payments to <strong>@onceuponastage_summer</strong> on Venmo and include the session week and your child's name in the description.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <h2>Get in Touch</h2>
+
+    <p style="color:#c8b0e8;font-size:0.95rem;margin-bottom:1rem;">Have a question? Send us an email and we'll get back to you!</p>
+    <a href="mailto:onceuponastage.26@gmail.com?subject=Question%20about%20Once%20Upon%20a%20Stage" style="display:inline-block;background:linear-gradient(135deg,var(--gold-glow),var(--gold));color:var(--purple-dark);font-weight:700;padding:0.9rem 2rem;border-radius:50px;text-decoration:none;font-size:1rem;margin-bottom:0.5rem;">Email Us</a>
+    <p style="margin-top:0.5rem;"><a href="mailto:onceuponastage.26@gmail.com" style="color:var(--gold-light);text-decoration:none;">onceuponastage.26@gmail.com</a></p>
+
+    <div class="footer-cta">
+      <a href="https://forms.gle/SuDH2Sbjdi7FvH9w8" target="_blank" rel="noopener">Register Your Camper!</a>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Once Upon a Stage &middot; Highland/Alpine, Utah
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('open');
+    });
+  });
+
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
