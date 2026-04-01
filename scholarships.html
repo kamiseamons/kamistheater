@@ -52,14 +52,32 @@
       <h3>Apply for a Scholarship</h3>
       <p class="form-note">All applications are confidential. We'll do our best to help every kid who wants to be on stage. Please also complete the <a href="https://forms.gle/SuDH2Sbjdi7FvH9w8" target="_blank" rel="noopener" style="color:var(--purple-accent);font-weight:600;">camp registration form</a> so we have all of your child's information.</p>
 
-      <p style="font-size:0.95rem;color:var(--text-body);line-height:1.6;margin-bottom:0.5rem;">To apply, please email us with:</p>
-      <p style="font-size:0.92rem;color:var(--text-body);line-height:2;margin-bottom:1rem;">
-        Your name<br>
-        Your child's name and age<br>
-        Which session you're interested in<br>
-        Anything you'd like us to know
-      </p>
-      <div style="text-align:center;"><a href="mailto:onceuponastage.26@gmail.com?subject=Scholarship%20Application%20-%20Once%20Upon%20a%20Stage" class="btn-primary btn-purple" style="display:inline-block;text-align:center;">Email Your Application</a></div>
+      <form method="POST" action="https://formsubmit.co/onceuponastage.26@gmail.com" class="scholarship-form-fields">
+        <input type="hidden" name="_subject" value="Scholarship Application - Once Upon a Stage">
+        <input type="hidden" name="_next" value="https://kamistheater.com/success.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <label for="s-parent">Parent/Guardian Name</label>
+        <input type="text" id="s-parent" name="parent-name" placeholder="Your name" required>
+        <label for="s-email">Your Email</label>
+        <input type="email" id="s-email" name="email" placeholder="your@email.com" required>
+        <label for="s-child">Child's Name</label>
+        <input type="text" id="s-child" name="child-name" placeholder="Your child's name" required>
+        <label for="s-age">Child's Age</label>
+        <input type="number" id="s-age" name="child-age" min="8" max="13" placeholder="8-13" required>
+        <label for="s-session">Preferred Session</label>
+        <select id="s-session" name="session" required>
+          <option value="" disabled selected>Select a session</option>
+          <option value="June 3-8">June 3 - 8</option>
+          <option value="June 22-27">June 22 - 27</option>
+          <option value="July 6-11">July 6 - 11</option>
+          <option value="July 13-18">July 13 - 18</option>
+          <option value="August 3-8">August 3 - 8</option>
+        </select>
+        <label for="s-message">Tell us about your situation <span style="font-weight:400;color:var(--text-mid);">(optional)</span></label>
+        <textarea id="s-message" name="message" placeholder="Anything you'd like us to know"></textarea>
+        <button type="submit" class="btn-primary btn-purple" style="width:100%;border:none;cursor:pointer;">Submit Application</button>
+      </form>
       <p style="margin-top:0.8rem;font-size:0.88rem;color:var(--text-mid);text-align:center;">Or email us directly: <a href="mailto:onceuponastage.26@gmail.com" style="color:var(--purple-accent);text-decoration:none;font-weight:600;">onceuponastage.26@gmail.com</a></p>
     </div>
   </div>
@@ -70,9 +88,17 @@
   <div class="container">
     <h2>Get in Touch</h2>
 
-    <p style="color:#c8b0e8;font-size:0.95rem;margin-bottom:1rem;">Have a question? Send us an email and we'll get back to you!</p>
-    <a href="mailto:onceuponastage.26@gmail.com?subject=Question%20about%20Once%20Upon%20a%20Stage" style="display:inline-block;background:linear-gradient(135deg,var(--gold-glow),var(--gold));color:var(--purple-dark);font-weight:700;padding:0.9rem 2rem;border-radius:50px;text-decoration:none;font-size:1rem;margin-bottom:0.5rem;">Email Us</a>
-    <p style="margin-top:0.5rem;"><a href="mailto:onceuponastage.26@gmail.com" style="color:var(--gold-light);text-decoration:none;">onceuponastage.26@gmail.com</a></p>
+<form style="max-width:400px;margin:0 auto 1.5rem;" method="POST" action="https://formsubmit.co/onceuponastage.26@gmail.com">
+      <input type="hidden" name="_subject" value="New Message - Once Upon a Stage">
+      <input type="hidden" name="_next" value="https://kamistheater.com/success.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:0.7rem;border:1px solid rgba(255,255,255,0.15);border-radius:8px;background:rgba(255,255,255,0.08);color:#fff;font-family:Inter,sans-serif;font-size:0.92rem;margin-bottom:0.6rem;text-align:center;">
+      <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:0.7rem;border:1px solid rgba(255,255,255,0.15);border-radius:8px;background:rgba(255,255,255,0.08);color:#fff;font-family:Inter,sans-serif;font-size:0.92rem;margin-bottom:0.6rem;text-align:center;">
+      <textarea name="message" placeholder="Your Message" required style="width:100%;padding:0.7rem;border:1px solid rgba(255,255,255,0.15);border-radius:8px;background:rgba(255,255,255,0.08);color:#fff;font-family:Inter,sans-serif;font-size:0.92rem;margin-bottom:0.6rem;min-height:80px;resize:vertical;"></textarea>
+      <button type="submit" style="width:100%;padding:0.8rem;background:linear-gradient(135deg,var(--gold-glow),var(--gold));color:var(--purple-dark);font-weight:700;font-size:1rem;border:none;border-radius:50px;cursor:pointer;">Send Message</button>
+    </form>
+    <p style="font-size:0.88rem;"><a href="mailto:onceuponastage.26@gmail.com" style="color:var(--gold-light);text-decoration:none;">onceuponastage.26@gmail.com</a></p>
 
     <div class="footer-cta">
       <a href="https://forms.gle/SuDH2Sbjdi7FvH9w8" target="_blank" rel="noopener">Register Your Camper!</a>

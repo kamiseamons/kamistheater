@@ -748,6 +748,49 @@
     background: var(--purple-accent);
   }
 
+  .scholarship-form-fields {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .scholarship-form-fields label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.3rem;
+    text-align: center;
+  }
+
+  .scholarship-form-fields input,
+  .scholarship-form-fields select,
+  .scholarship-form-fields textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    color: var(--text-body);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+
+  .scholarship-form-fields input:focus,
+  .scholarship-form-fields select:focus,
+  .scholarship-form-fields textarea:focus {
+    outline: none;
+    border-color: var(--purple-accent);
+  }
+
+  .scholarship-form-fields textarea {
+    min-height: 80px;
+    resize: vertical;
+    text-align: left;
+  }
+
   /* ── FAQ ── */
   .faq-section { background: var(--cream-alt); }
 
