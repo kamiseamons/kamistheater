@@ -148,38 +148,14 @@
   .hero-bg {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center, #3d1f6e 0%, #1a0a2e 70%, #0d0518 100%);
-  }
-
-  .hero-bg::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(2px 2px at 15% 20%, #fff 100%, transparent),
-      radial-gradient(1px 1px at 30% 10%, rgba(255,215,0,0.8) 100%, transparent),
-      radial-gradient(2px 2px at 50% 30%, #fff 100%, transparent),
-      radial-gradient(1px 1px at 70% 15%, rgba(255,215,0,0.6) 100%, transparent),
-      radial-gradient(2px 2px at 85% 25%, #fff 100%, transparent),
-      radial-gradient(1px 1px at 10% 35%, #fff 100%, transparent),
-      radial-gradient(2px 2px at 40% 5%, rgba(255,215,0,0.7) 100%, transparent),
-      radial-gradient(1px 1px at 60% 40%, #fff 100%, transparent),
-      radial-gradient(2px 2px at 90% 8%, #fff 100%, transparent),
-      radial-gradient(1px 1px at 25% 45%, rgba(255,215,0,0.5) 100%, transparent),
-      radial-gradient(2px 2px at 75% 35%, #fff 100%, transparent),
-      radial-gradient(1px 1px at 45% 15%, #fff 100%, transparent),
-      radial-gradient(3px 3px at 20% 50%, rgba(255,215,0,0.3) 100%, transparent),
-      radial-gradient(3px 3px at 80% 45%, rgba(255,215,0,0.3) 100%, transparent),
-      radial-gradient(1px 1px at 55% 50%, #fff 100%, transparent),
-      radial-gradient(1px 1px at 35% 55%, rgba(255,215,0,0.4) 100%, transparent);
-    opacity: 0.6;
+    background: url('hero-lights.jpg') center/cover no-repeat;
   }
 
   .hero-bg::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center, rgba(100,50,180,0.15) 0%, transparent 70%);
+    background: rgba(0, 0, 0, 0.35);
   }
 
   .hero-content {
@@ -194,7 +170,7 @@
     max-width: 500px;
     width: 90%;
     margin-bottom: 0.5rem;
-    filter: drop-shadow(0 0 15px rgba(255,215,0,0.3));
+    filter: drop-shadow(0 0 25px rgba(255,255,255,0.4)) drop-shadow(0 0 50px rgba(255,215,0,0.2));
   }
 
   .hero-subtitle {
