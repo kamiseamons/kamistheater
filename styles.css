@@ -408,6 +408,20 @@
     margin-bottom: 0.2rem;
   }
 
+  .date-card.single .session {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .date-card.single .dates {
+    font-size: 2.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .date-card.single .day-range {
+    font-size: 1rem;
+  }
+
   .date-card .day-range {
     font-size: 0.82rem;
     color: #c8b0e8;
